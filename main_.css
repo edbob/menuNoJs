@@ -1,6 +1,9 @@
 /*@nedov cod new task, 
 @we heve do native css menu in center dyspley, no javascript!*/
-
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:antiquewhite;
+}
  ul {
     width: 290px; /* The width of the menu */
     margin: 0 auto;
