@@ -51,7 +51,7 @@ body{
 
     label {
         display: block;
-        background: #222;
+        background: #222222;
         width: 40px;
         height: 40px;
         cursor: pointer;
@@ -78,11 +78,16 @@ body{
         left: 20px;
     }
 
-    nav a {
-        color: #777777;
+  ul {
+    
+   }
+
+   li a {
+        background-color:#222222;
+        color:#ffffff;
     }
 
-    nav ul li {
+     ul li {
         display: block;
         float: none;
         width: 100%;
@@ -91,21 +96,25 @@ body{
         text-indent: 20px;
     }
 
-    nav > ul > li {
+    ul li {
         margin-left: 0px;
     }
 
-    nav > ul li ul li {
+     ul li ul li {
         display: block;
         float: none;
     }
 
-    nav > ul li ul {
+    ul li ul {
         display: block;
         position: relative;
         width: 100%;
         z-index: 9999;
         float: none;
     }
+     li a:hover {
+    color: #ffffff; /* Text color of active item */
+    background-color: #777777; /* Background color of active item */
+   }
 }
 /*End adaptation block*/
