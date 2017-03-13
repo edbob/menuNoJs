@@ -21,7 +21,7 @@ li {
     li ul {
         position: absolute; /* Submenus are positioned absolutely */
         display: none; /* Hide submenu*/
-        margin-top: 1px; /* Move the submenu up */
+        margin-top: 0.5px; /* Move the submenu up */
     }
 
     li a {
@@ -35,7 +35,7 @@ li {
 
 .rows > li {
     float: none !important;
-    width: 100px !important;
+    width: 100px;
 }
 
 li a:hover {
@@ -53,12 +53,8 @@ li:hover ul {
 /*Beginning of the adaptation block*/
 @media screen and (max-width: 768px) {
     nav > ul {
-        background-color:#222222;
         display: none;
-        width: 100%;
-        list-style: none;
-        padding: 0;
-        margin: 0;
+        width: 95%;
     }
     label {
         display: block;
@@ -83,7 +79,7 @@ li:hover ul {
 
     [type="checkbox"]:checked ~ ul {
         display: block;
-        z-index: 9999;
+        /*z-index: 9999;*/
         position: absolute;
         right:20px;
         top: 40px;
@@ -96,12 +92,9 @@ li:hover ul {
     }
 
     nav ul li {
-        display: block;
-        float: none;
         width: 100%;
-        text-align: left;
         background: #222;
-        text-indent: 20px;
+        text-indent: 10px;
     }
 
     nav ul li {
@@ -117,9 +110,11 @@ li:hover ul {
         display: block;
         position: relative;
         width: 100%;
-        z-index: 9999;
-        float: none;
     }
+    .rows > li {
+    width: 100%;
+    text-indent: 50px;
+}
 
     nav li a:hover {
         color: #ffffff; /* Text color of active item */
