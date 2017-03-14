@@ -2,7 +2,7 @@
 @we heve do native css menu in center dyspley, no javascript!*/
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:antiquewhite;
+    background-color: #636060;
 }
  ul {
     width: 290px; /* The width of the menu */
