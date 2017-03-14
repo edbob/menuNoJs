@@ -64,7 +64,7 @@ li {
         cursor: pointer;
         position: absolute;
         right: 20px;
-        top: 0px;
+        top: 10px;
     }
 
         label:after {
@@ -82,7 +82,7 @@ li {
         /*z-index: 9999;*/
         position: absolute;
         right:20px;
-        top: 40px;
+        top: 50px;
     }
 
     nav a {
