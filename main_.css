@@ -21,7 +21,7 @@ li {
    li ul {
     position: absolute; /* Submenus are positioned absolutely */
     display: none; /* Hide submenu*/
-        margin-top: 0.5px; /* Move the submenu up */
+    margin-top: 0.5px; /* Move the submenu up */
    }
 
    li a {
@@ -29,7 +29,7 @@ li {
     padding: 5px; /* The boxes around the labels */
     text-decoration: none; /* Underline from links remove */
     color: #666; /* The color of the text */
-        border: 1px solid #ccc; /* The frame around the menu items*/
+    border: 1px solid #ccc; /* The frame around the menu items*/
     background-color: #f0f0f0; /* Background color */
    }
 
@@ -67,7 +67,7 @@ li {
         top: 10px;
     }
 
-        label:after {
+        label::after {
             content: '';
             display: block;
             width: 30px;
@@ -79,7 +79,6 @@ li {
 
     [type="checkbox"]:checked ~ ul {
         display: block;
-        /*z-index: 9999;*/
         position: absolute;
         right:20px;
         top: 50px;
