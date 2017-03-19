@@ -2,8 +2,9 @@
 @we heve do native css menu in center dyspley, no javascript!*/
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color:antiquewhite;
+    background-color: #636060;
 }
+
  ul {
     width: 290px; /* The width of the menu */
     margin: 0 auto;
@@ -12,30 +13,111 @@ body{
     font-family: Arial, sans-serif; /* Chopped font for menu text */
     font-size: 10pt; /* The size of the names in the menu */
    }
-   li{
-    float:left;
+
+li {
+    float: left;
      }
+
    li ul {
     position: absolute; /* Submenus are positioned absolutely */
     display: none; /* Hide submenu*/
-    margin-top: 1px; /* Move the submenu up */
+    margin-top: 0.5px; /* Move the submenu up */
    }
+
    li a {
     display: block; /* The link as a block element */
     padding: 5px; /* The boxes around the labels */
     text-decoration: none; /* Underline from links remove */
     color: #666; /* The color of the text */
-    border: 1px solid #ccc;/* The frame around the menu items*/
+    border: 1px solid #ccc; /* The frame around the menu items*/
     background-color: #f0f0f0; /* Background color */
    }
-   .rows > li{
-       float:none !important;
-       width:100px !important;
+
+.rows > li {
+    float: none !important;
+    width: 100px;
    }
+
    li a:hover {
     color: #ffe; /* Text color of active item */
     background-color: #5488af; /* Background color of active item */
    }
+
    li:hover ul { 
     display: block; /* When you select the item the mouse cursor is displayed submenu*/
    }
+/*Hide the checkbox*/
+[type="checkbox"], label {
+    display: none;
+}
+/*Beginning of the adaptation block*/
+@media screen and (max-width: 768px) {
+    nav > ul {
+        display: none;
+        width: 95%;
+    }
+    label {
+        display: block;
+        background: #222;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+        label::after {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 5px;
+            background: #777;
+            margin: 7px 5px;
+            box-shadow: 0px 10px 0px #777, 0px 20px 0px #777;
+        }
+
+    [type="checkbox"]:checked ~ ul {
+        display: block;
+        position: absolute;
+        right:20px;
+        top: 50px;
+    }
+
+    nav a {
+        color: #777;
+        background-color:#222222;
+        border:none;
+    }
+
+    nav ul li {
+        width: 100%;
+        background: #222;
+        text-indent: 10px;
+    }
+
+    nav ul li {
+        margin-left: 0px;
+    }
+
+    nav ul li ul li {
+        display: block;
+        float: none;
+    }
+
+    nav ul li ul {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .rows > li {
+    width: 100%;
+    text-indent: 50px;
+}
+
+    nav li a:hover {
+        color: #ffffff; /* Text color of active item */
+        background-color: #777777; /* Background color of active item */
+    }
+}
+/*End adaptation block*/
